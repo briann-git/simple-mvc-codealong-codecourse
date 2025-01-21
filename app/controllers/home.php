@@ -2,12 +2,16 @@
 
 class Home extends Controller
 {
-    public function index($name = '')
+    public function index($id = '')
     {
-        $user = $this->model('User');
-        $user->name = $name;
-
-        $this->view('home/index', ['name' => $user->name]);
+        $this->view('home/index', ['name' => User::find($id)->username]);
     }
 
+    public function create($username= '', $email='')
+    {
+        User::create([
+            'username' => $username,
+            'email' => $email
+        ]);
+    }
 }

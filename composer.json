@@ -5,5 +5,10 @@
     "license": "None",
     "require": {
         "illuminate/database": "^11.38"
+    },
+    "autoload": {
+        "classmap": [
+            "app/models"
+        ]
     }
 }
