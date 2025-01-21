@@ -1,0 +1,9 @@
+{
+    "name": "ndung/simple-mvc",
+    "description": "Codecourse Code along",
+    "type": "project",
+    "license": "None",
+    "require": {
+        "illuminate/database": "^11.38"
+    }
+}
